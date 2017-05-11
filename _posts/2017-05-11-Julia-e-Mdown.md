@@ -9,22 +9,11 @@ categories: julia geometria euclidiana
 
 ```julia
 using Gadfly
-#plot(x=[0, 1, 1, 2, 2, 3, 3, 2, 2, 1, 1, 0, 4, 5, 5, 4],
-#     y=[0, 0, 1, 1, 0, 0, 3, 3, 2, 2, 3, 3, 0, 0, 3, 3],
-#     group=["H", "H", "H", "H", "H", "H", "H", "H",
-#            "H", "H", "H", "H", "I", "I", "I", "I"],
-#     Geom.polygon(preserve_order=true, fill=true))
 
 plot(x=[1,1,-1,-1],
      y=[1,-1,-1,1],
 Geom.polygon(preserve_order=true, fill=true))
 ```
-
-    WARNING: Method definition describe(AbstractArray) in module StatsBase at /home/carlos/.julia/v0.5/StatsBase/src/scalarstats.jl:573 overwritten in module DataFrames at /home/carlos/.julia/v0.5/DataFrames/src/abstractdataframe/abstractdataframe.jl:407.
-
-
-
-
 
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
@@ -1735,10 +1724,6 @@ end
 
 
 
-    refl_and_plot_s (generic function with 1 method)
-
-
-
 
 ```julia
 refl_and_plot_s([1,1], [1,2], [0,2],[0,1])
@@ -3425,16 +3410,4 @@ function refl_and_plot_rt(A,B,C)
                Geom.polygon(preserve_order=true, fill=true),
                Theme(default_color=colorant"green")))
 end
-```
-
-
-
-
-    refl_and_plot_rt (generic function with 1 method)
-
-
-
-
-```julia
-
 ```
