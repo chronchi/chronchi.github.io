@@ -1,22 +1,26 @@
 ---
 layout: post
-title:  "Geometria euclidiana e reflexão ao redor de uma reta"
-date:   2017-05-10 09:57:11 -0300
-categories: julia markdown github geometria
+title:  "Geometria Euclidiana e Julia"
+date:   2017-05-11 08:08 -0300
+categories: julia geometria euclidiana
 ---
 
-
-Neste post vamos ver um código, feito em Julia, para refletir imagens ao redor de uma reta.
 
 
 ```julia
 using Gadfly
+#plot(x=[0, 1, 1, 2, 2, 3, 3, 2, 2, 1, 1, 0, 4, 5, 5, 4],
+#     y=[0, 0, 1, 1, 0, 0, 3, 3, 2, 2, 3, 3, 0, 0, 3, 3],
+#     group=["H", "H", "H", "H", "H", "H", "H", "H",
+#            "H", "H", "H", "H", "I", "I", "I", "I"],
+#     Geom.polygon(preserve_order=true, fill=true))
+
 plot(x=[1,1,-1,-1],
      y=[1,-1,-1,1],
 Geom.polygon(preserve_order=true, fill=true))
 ```
 
-
+    WARNING: Method definition describe(AbstractArray) in module StatsBase at /home/carlos/.julia/v0.5/StatsBase/src/scalarstats.jl:573 overwritten in module DataFrames at /home/carlos/.julia/v0.5/DataFrames/src/abstractdataframe/abstractdataframe.jl:407.
 
 
 
@@ -33,12 +37,12 @@ Geom.polygon(preserve_order=true, fill=true))
      stroke-width="0.3"
      font-size="3.88"
 
-     id="img-4cb486e9">
-<g class="plotroot xscalable yscalable" id="img-4cb486e9-1">
-  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-4cb486e9-2">
+     id="img-b70263e4">
+<g class="plotroot xscalable yscalable" id="img-b70263e4-1">
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-b70263e4-2">
     <text x="77.18" y="88.39" text-anchor="middle" dy="0.6em">x</text>
   </g>
-  <g class="guide xlabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-4cb486e9-3">
+  <g class="guide xlabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-b70263e4-3">
     <text x="-123.16" y="84.39" text-anchor="middle" gadfly:scale="1.0" visibility="hidden">-3.5</text>
     <text x="-94.54" y="84.39" text-anchor="middle" gadfly:scale="1.0" visibility="hidden">-3.0</text>
     <text x="-65.92" y="84.39" text-anchor="middle" gadfly:scale="1.0" visibility="hidden">-2.5</text>
@@ -152,12 +156,12 @@ Geom.polygon(preserve_order=true, fill=true))
     <text x="237.46" y="84.39" text-anchor="middle" gadfly:scale="5.0" visibility="hidden">2.8</text>
     <text x="248.9" y="84.39" text-anchor="middle" gadfly:scale="5.0" visibility="hidden">3.0</text>
   </g>
-<g clip-path="url(#img-4cb486e9-4)">
-  <g id="img-4cb486e9-5">
-    <g pointer-events="visible" opacity="1" fill="#000000" fill-opacity="0.000" stroke="#000000" stroke-opacity="0.000" class="guide background" id="img-4cb486e9-6">
+<g clip-path="url(#img-b70263e4-4)">
+  <g id="img-b70263e4-5">
+    <g pointer-events="visible" opacity="1" fill="#000000" fill-opacity="0.000" stroke="#000000" stroke-opacity="0.000" class="guide background" id="img-b70263e4-6">
       <rect x="17.94" y="5" width="118.48" height="75.72"/>
     </g>
-    <g class="guide ygridlines xfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-4cb486e9-7">
+    <g class="guide ygridlines xfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-b70263e4-7">
       <path fill="none" d="M17.94,168.36 L 136.42 168.36" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M17.94,150.43 L 136.42 150.43" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M17.94,132.5 L 136.42 132.5" gadfly:scale="1.0" visibility="hidden"/>
@@ -271,7 +275,7 @@ Geom.polygon(preserve_order=true, fill=true))
       <path fill="none" d="M17.94,-57.54 L 136.42 -57.54" gadfly:scale="5.0" visibility="hidden"/>
       <path fill="none" d="M17.94,-64.71 L 136.42 -64.71" gadfly:scale="5.0" visibility="hidden"/>
     </g>
-    <g class="guide xgridlines yfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-4cb486e9-8">
+    <g class="guide xgridlines yfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-b70263e4-8">
       <path fill="none" d="M-123.16,5 L -123.16 80.72" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M-94.54,5 L -94.54 80.72" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M-65.92,5 L -65.92 80.72" gadfly:scale="1.0" visibility="hidden"/>
@@ -385,34 +389,34 @@ Geom.polygon(preserve_order=true, fill=true))
       <path fill="none" d="M237.46,5 L 237.46 80.72" gadfly:scale="5.0" visibility="hidden"/>
       <path fill="none" d="M248.9,5 L 248.9 80.72" gadfly:scale="5.0" visibility="hidden"/>
     </g>
-    <g class="plotpanel" id="img-4cb486e9-9">
-      <g class="geometry" stroke-width="0.3" stroke="#FFFFFF" fill="#00BFFF" id="img-4cb486e9-10">
+    <g class="plotpanel" id="img-b70263e4-9">
+      <g class="geometry" stroke-width="0.3" stroke="#FFFFFF" fill="#00BFFF" id="img-b70263e4-10">
         <path d="M134.42,7 L 134.42 78.71 19.94 78.71 19.94 7 z"/>
       </g>
     </g>
-    <g opacity="0" class="guide zoomslider" stroke="#000000" stroke-opacity="0.000" id="img-4cb486e9-11">
-      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-4cb486e9-12">
+    <g opacity="0" class="guide zoomslider" stroke="#000000" stroke-opacity="0.000" id="img-b70263e4-11">
+      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-b70263e4-12">
         <rect x="129.42" y="8" width="4" height="4"/>
-        <g class="button_logo" fill="#6A6A6A" id="img-4cb486e9-13">
+        <g class="button_logo" fill="#6A6A6A" id="img-b70263e4-13">
           <path d="M130.22,9.6 L 131.02 9.6 131.02 8.8 131.82 8.8 131.82 9.6 132.62 9.6 132.62 10.4 131.82 10.4 131.82 11.2 131.02 11.2 131.02 10.4 130.22 10.4 z"/>
         </g>
       </g>
-      <g fill="#EAEAEA" id="img-4cb486e9-14">
+      <g fill="#EAEAEA" id="img-b70263e4-14">
         <rect x="109.92" y="8" width="19" height="4"/>
       </g>
-      <g class="zoomslider_thumb" fill="#6A6A6A" id="img-4cb486e9-15">
+      <g class="zoomslider_thumb" fill="#6A6A6A" id="img-b70263e4-15">
         <rect x="118.42" y="8" width="2" height="4"/>
       </g>
-      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-4cb486e9-16">
+      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-b70263e4-16">
         <rect x="105.42" y="8" width="4" height="4"/>
-        <g class="button_logo" fill="#6A6A6A" id="img-4cb486e9-17">
+        <g class="button_logo" fill="#6A6A6A" id="img-b70263e4-17">
           <path d="M106.22,9.6 L 108.62 9.6 108.62 10.4 106.22 10.4 z"/>
         </g>
       </g>
     </g>
   </g>
 </g>
-  <g class="guide ylabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-4cb486e9-18">
+  <g class="guide ylabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-b70263e4-18">
     <text x="16.94" y="168.36" text-anchor="end" dy="0.35em" gadfly:scale="1.0" visibility="hidden">-3.5</text>
     <text x="16.94" y="150.43" text-anchor="end" dy="0.35em" gadfly:scale="1.0" visibility="hidden">-3.0</text>
     <text x="16.94" y="132.5" text-anchor="end" dy="0.35em" gadfly:scale="1.0" visibility="hidden">-2.5</text>
@@ -526,12 +530,12 @@ Geom.polygon(preserve_order=true, fill=true))
     <text x="16.94" y="-57.54" text-anchor="end" dy="0.35em" gadfly:scale="5.0" visibility="hidden">2.8</text>
     <text x="16.94" y="-64.71" text-anchor="end" dy="0.35em" gadfly:scale="5.0" visibility="hidden">3.0</text>
   </g>
-  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-4cb486e9-19">
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-b70263e4-19">
     <text x="8.81" y="42.86" text-anchor="end" dy="0.35em">y</text>
   </g>
 </g>
 <defs>
-  <clipPath id="img-4cb486e9-4">
+  <clipPath id="img-b70263e4-4">
   <path d="M17.94,5 L 136.42 5 136.42 80.72 17.94 80.72" />
 </clipPath>
 </defs>
@@ -1632,64 +1636,64 @@ return Gadfly;
           factory(glob.Snap, glob.Gadfly);
       }
 })(window, function (Snap, Gadfly) {
-    var fig = Snap("#img-4cb486e9");
-fig.select("#img-4cb486e9-5")
+    var fig = Snap("#img-b70263e4");
+fig.select("#img-b70263e4-5")
    .init_gadfly();
-fig.select("#img-4cb486e9-7")
+fig.select("#img-b70263e4-7")
    .plotroot().data("unfocused_ygrid_color", "#D0D0E0")
 ;
-fig.select("#img-4cb486e9-7")
+fig.select("#img-b70263e4-7")
    .plotroot().data("focused_ygrid_color", "#A0A0A0")
 ;
-fig.select("#img-4cb486e9-8")
+fig.select("#img-b70263e4-8")
    .plotroot().data("unfocused_xgrid_color", "#D0D0E0")
 ;
-fig.select("#img-4cb486e9-8")
+fig.select("#img-b70263e4-8")
    .plotroot().data("focused_xgrid_color", "#A0A0A0")
 ;
-fig.select("#img-4cb486e9-12")
+fig.select("#img-b70263e4-12")
    .data("mouseover_color", "#CD5C5C")
 ;
-fig.select("#img-4cb486e9-12")
+fig.select("#img-b70263e4-12")
    .data("mouseout_color", "#6A6A6A")
 ;
-fig.select("#img-4cb486e9-12")
+fig.select("#img-b70263e4-12")
    .click(Gadfly.zoomslider_zoomin_click)
 .mouseenter(Gadfly.zoomslider_button_mouseover)
 .mouseleave(Gadfly.zoomslider_button_mouseout)
 ;
-fig.select("#img-4cb486e9-14")
+fig.select("#img-b70263e4-14")
    .data("max_pos", 120.42)
 ;
-fig.select("#img-4cb486e9-14")
+fig.select("#img-b70263e4-14")
    .data("min_pos", 103.42)
 ;
-fig.select("#img-4cb486e9-14")
+fig.select("#img-b70263e4-14")
    .click(Gadfly.zoomslider_track_click);
-fig.select("#img-4cb486e9-15")
+fig.select("#img-b70263e4-15")
    .data("max_pos", 120.42)
 ;
-fig.select("#img-4cb486e9-15")
+fig.select("#img-b70263e4-15")
    .data("min_pos", 103.42)
 ;
-fig.select("#img-4cb486e9-15")
+fig.select("#img-b70263e4-15")
    .data("mouseover_color", "#CD5C5C")
 ;
-fig.select("#img-4cb486e9-15")
+fig.select("#img-b70263e4-15")
    .data("mouseout_color", "#6A6A6A")
 ;
-fig.select("#img-4cb486e9-15")
+fig.select("#img-b70263e4-15")
    .drag(Gadfly.zoomslider_thumb_dragmove,
      Gadfly.zoomslider_thumb_dragstart,
      Gadfly.zoomslider_thumb_dragend)
 ;
-fig.select("#img-4cb486e9-16")
+fig.select("#img-b70263e4-16")
    .data("mouseover_color", "#CD5C5C")
 ;
-fig.select("#img-4cb486e9-16")
+fig.select("#img-b70263e4-16")
    .data("mouseout_color", "#6A6A6A")
 ;
-fig.select("#img-4cb486e9-16")
+fig.select("#img-b70263e4-16")
    .click(Gadfly.zoomslider_zoomout_click)
 .mouseenter(Gadfly.zoomslider_button_mouseover)
 .mouseleave(Gadfly.zoomslider_button_mouseout)
@@ -1725,7 +1729,15 @@ function refl_and_plot_s(A,B,C,D)
                Geom.line,
                Theme(default_color=colorant"purple")))
 end
+
 ```
+
+
+
+
+    refl_and_plot_s (generic function with 1 method)
+
+
 
 
 ```julia
@@ -1746,12 +1758,12 @@ refl_and_plot_s([1,1], [1,2], [0,2],[0,1])
      stroke-width="0.3"
      font-size="3.88"
 
-     id="img-139b6d8e">
-<g class="plotroot xscalable yscalable" id="img-139b6d8e-1">
-  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-139b6d8e-2">
+     id="img-ad4b4278">
+<g class="plotroot xscalable yscalable" id="img-ad4b4278-1">
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-ad4b4278-2">
     <text x="76.01" y="88.39" text-anchor="middle" dy="0.6em">x</text>
   </g>
-  <g class="guide xlabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-139b6d8e-3">
+  <g class="guide xlabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-ad4b4278-3">
     <text x="-157.65" y="84.39" text-anchor="middle" gadfly:scale="1.0" visibility="hidden">-1.5</text>
     <text x="-99.24" y="84.39" text-anchor="middle" gadfly:scale="1.0" visibility="hidden">-1.0</text>
     <text x="-40.82" y="84.39" text-anchor="middle" gadfly:scale="1.0" visibility="hidden">-0.5</text>
@@ -1858,12 +1870,12 @@ refl_and_plot_s([1,1], [1,2], [0,2],[0,1])
     <text x="239.57" y="84.39" text-anchor="middle" gadfly:scale="5.0" visibility="hidden">1.9</text>
     <text x="251.25" y="84.39" text-anchor="middle" gadfly:scale="5.0" visibility="hidden">2.0</text>
   </g>
-<g clip-path="url(#img-139b6d8e-4)">
-  <g id="img-139b6d8e-5">
-    <g pointer-events="visible" opacity="1" fill="#000000" fill-opacity="0.000" stroke="#000000" stroke-opacity="0.000" class="guide background" id="img-139b6d8e-6">
+<g clip-path="url(#img-ad4b4278-4)">
+  <g id="img-ad4b4278-5">
+    <g pointer-events="visible" opacity="1" fill="#000000" fill-opacity="0.000" stroke="#000000" stroke-opacity="0.000" class="guide background" id="img-ad4b4278-6">
       <rect x="15.59" y="5" width="120.83" height="75.72"/>
     </g>
-    <g class="guide ygridlines xfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-139b6d8e-7">
+    <g class="guide ygridlines xfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-ad4b4278-7">
       <path fill="none" d="M15.59,168.36 L 136.42 168.36" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M15.59,150.43 L 136.42 150.43" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M15.59,132.5 L 136.42 132.5" gadfly:scale="1.0" visibility="hidden"/>
@@ -1971,7 +1983,7 @@ refl_and_plot_s([1,1], [1,2], [0,2],[0,1])
       <path fill="none" d="M15.59,-55.75 L 136.42 -55.75" gadfly:scale="5.0" visibility="hidden"/>
       <path fill="none" d="M15.59,-64.71 L 136.42 -64.71" gadfly:scale="5.0" visibility="hidden"/>
     </g>
-    <g class="guide xgridlines yfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-139b6d8e-8">
+    <g class="guide xgridlines yfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-ad4b4278-8">
       <path fill="none" d="M-157.65,5 L -157.65 80.72" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M-99.24,5 L -99.24 80.72" gadfly:scale="1.0" visibility="hidden"/>
       <path fill="none" d="M-40.82,5 L -40.82 80.72" gadfly:scale="1.0" visibility="hidden"/>
@@ -2078,40 +2090,40 @@ refl_and_plot_s([1,1], [1,2], [0,2],[0,1])
       <path fill="none" d="M239.57,5 L 239.57 80.72" gadfly:scale="5.0" visibility="hidden"/>
       <path fill="none" d="M251.25,5 L 251.25 80.72" gadfly:scale="5.0" visibility="hidden"/>
     </g>
-    <g class="plotpanel" id="img-139b6d8e-9">
-      <g stroke-width="0.3" fill="#000000" fill-opacity="0.000" class="geometry" stroke-dasharray="none" stroke="#800080" id="img-139b6d8e-10">
+    <g class="plotpanel" id="img-ad4b4278-9">
+      <g stroke-width="0.3" fill="#000000" fill-opacity="0.000" class="geometry" stroke-dasharray="none" stroke="#800080" id="img-ad4b4278-10">
         <path fill="none" d="M17.59,42.86 L 134.42 42.86"/>
       </g>
-      <g class="geometry" stroke-width="0.3" stroke="#FFFFFF" fill="#008000" id="img-139b6d8e-11">
+      <g class="geometry" stroke-width="0.3" stroke="#FFFFFF" fill="#008000" id="img-ad4b4278-11">
         <path d="M134.42,60.79 L 134.42 78.71 17.59 78.71 17.59 60.79 z"/>
       </g>
-      <g class="geometry" stroke-width="0.3" stroke="#FFFFFF" fill="#00BFFF" id="img-139b6d8e-12">
+      <g class="geometry" stroke-width="0.3" stroke="#FFFFFF" fill="#00BFFF" id="img-ad4b4278-12">
         <path d="M134.42,24.93 L 134.42 7 17.59 7 17.59 24.93 z"/>
       </g>
     </g>
-    <g opacity="0" class="guide zoomslider" stroke="#000000" stroke-opacity="0.000" id="img-139b6d8e-13">
-      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-139b6d8e-14">
+    <g opacity="0" class="guide zoomslider" stroke="#000000" stroke-opacity="0.000" id="img-ad4b4278-13">
+      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-ad4b4278-14">
         <rect x="129.42" y="8" width="4" height="4"/>
-        <g class="button_logo" fill="#6A6A6A" id="img-139b6d8e-15">
+        <g class="button_logo" fill="#6A6A6A" id="img-ad4b4278-15">
           <path d="M130.22,9.6 L 131.02 9.6 131.02 8.8 131.82 8.8 131.82 9.6 132.62 9.6 132.62 10.4 131.82 10.4 131.82 11.2 131.02 11.2 131.02 10.4 130.22 10.4 z"/>
         </g>
       </g>
-      <g fill="#EAEAEA" id="img-139b6d8e-16">
+      <g fill="#EAEAEA" id="img-ad4b4278-16">
         <rect x="109.92" y="8" width="19" height="4"/>
       </g>
-      <g class="zoomslider_thumb" fill="#6A6A6A" id="img-139b6d8e-17">
+      <g class="zoomslider_thumb" fill="#6A6A6A" id="img-ad4b4278-17">
         <rect x="118.42" y="8" width="2" height="4"/>
       </g>
-      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-139b6d8e-18">
+      <g fill="#EAEAEA" stroke-width="0.3" stroke-opacity="0" stroke="#6A6A6A" id="img-ad4b4278-18">
         <rect x="105.42" y="8" width="4" height="4"/>
-        <g class="button_logo" fill="#6A6A6A" id="img-139b6d8e-19">
+        <g class="button_logo" fill="#6A6A6A" id="img-ad4b4278-19">
           <path d="M106.22,9.6 L 108.62 9.6 108.62 10.4 106.22 10.4 z"/>
         </g>
       </g>
     </g>
   </g>
 </g>
-  <g class="guide ylabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-139b6d8e-20">
+  <g class="guide ylabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-ad4b4278-20">
     <text x="14.59" y="168.36" text-anchor="end" dy="0.35em" gadfly:scale="1.0" visibility="hidden">-7</text>
     <text x="14.59" y="150.43" text-anchor="end" dy="0.35em" gadfly:scale="1.0" visibility="hidden">-6</text>
     <text x="14.59" y="132.5" text-anchor="end" dy="0.35em" gadfly:scale="1.0" visibility="hidden">-5</text>
@@ -2219,12 +2231,12 @@ refl_and_plot_s([1,1], [1,2], [0,2],[0,1])
     <text x="14.59" y="-55.75" text-anchor="end" dy="0.35em" gadfly:scale="5.0" visibility="hidden">5.5</text>
     <text x="14.59" y="-64.71" text-anchor="end" dy="0.35em" gadfly:scale="5.0" visibility="hidden">6.0</text>
   </g>
-  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-139b6d8e-21">
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-ad4b4278-21">
     <text x="8.81" y="42.86" text-anchor="end" dy="0.35em">y</text>
   </g>
 </g>
 <defs>
-  <clipPath id="img-139b6d8e-4">
+  <clipPath id="img-ad4b4278-4">
   <path d="M15.59,5 L 136.42 5 136.42 80.72 15.59 80.72" />
 </clipPath>
 </defs>
@@ -3325,64 +3337,64 @@ return Gadfly;
           factory(glob.Snap, glob.Gadfly);
       }
 })(window, function (Snap, Gadfly) {
-    var fig = Snap("#img-139b6d8e");
-fig.select("#img-139b6d8e-5")
+    var fig = Snap("#img-ad4b4278");
+fig.select("#img-ad4b4278-5")
    .init_gadfly();
-fig.select("#img-139b6d8e-7")
+fig.select("#img-ad4b4278-7")
    .plotroot().data("unfocused_ygrid_color", "#D0D0E0")
 ;
-fig.select("#img-139b6d8e-7")
+fig.select("#img-ad4b4278-7")
    .plotroot().data("focused_ygrid_color", "#A0A0A0")
 ;
-fig.select("#img-139b6d8e-8")
+fig.select("#img-ad4b4278-8")
    .plotroot().data("unfocused_xgrid_color", "#D0D0E0")
 ;
-fig.select("#img-139b6d8e-8")
+fig.select("#img-ad4b4278-8")
    .plotroot().data("focused_xgrid_color", "#A0A0A0")
 ;
-fig.select("#img-139b6d8e-14")
+fig.select("#img-ad4b4278-14")
    .data("mouseover_color", "#CD5C5C")
 ;
-fig.select("#img-139b6d8e-14")
+fig.select("#img-ad4b4278-14")
    .data("mouseout_color", "#6A6A6A")
 ;
-fig.select("#img-139b6d8e-14")
+fig.select("#img-ad4b4278-14")
    .click(Gadfly.zoomslider_zoomin_click)
 .mouseenter(Gadfly.zoomslider_button_mouseover)
 .mouseleave(Gadfly.zoomslider_button_mouseout)
 ;
-fig.select("#img-139b6d8e-16")
+fig.select("#img-ad4b4278-16")
    .data("max_pos", 120.42)
 ;
-fig.select("#img-139b6d8e-16")
+fig.select("#img-ad4b4278-16")
    .data("min_pos", 103.42)
 ;
-fig.select("#img-139b6d8e-16")
+fig.select("#img-ad4b4278-16")
    .click(Gadfly.zoomslider_track_click);
-fig.select("#img-139b6d8e-17")
+fig.select("#img-ad4b4278-17")
    .data("max_pos", 120.42)
 ;
-fig.select("#img-139b6d8e-17")
+fig.select("#img-ad4b4278-17")
    .data("min_pos", 103.42)
 ;
-fig.select("#img-139b6d8e-17")
+fig.select("#img-ad4b4278-17")
    .data("mouseover_color", "#CD5C5C")
 ;
-fig.select("#img-139b6d8e-17")
+fig.select("#img-ad4b4278-17")
    .data("mouseout_color", "#6A6A6A")
 ;
-fig.select("#img-139b6d8e-17")
+fig.select("#img-ad4b4278-17")
    .drag(Gadfly.zoomslider_thumb_dragmove,
      Gadfly.zoomslider_thumb_dragstart,
      Gadfly.zoomslider_thumb_dragend)
 ;
-fig.select("#img-139b6d8e-18")
+fig.select("#img-ad4b4278-18")
    .data("mouseover_color", "#CD5C5C")
 ;
-fig.select("#img-139b6d8e-18")
+fig.select("#img-ad4b4278-18")
    .data("mouseout_color", "#6A6A6A")
 ;
-fig.select("#img-139b6d8e-18")
+fig.select("#img-ad4b4278-18")
    .click(Gadfly.zoomslider_zoomout_click)
 .mouseenter(Gadfly.zoomslider_button_mouseover)
 .mouseleave(Gadfly.zoomslider_button_mouseout)
@@ -3391,6 +3403,34 @@ fig.select("#img-139b6d8e-18")
 ]]> </script>
 </svg>
 
+
+
+
+
+```julia
+function transl(A)
+    A = A .+ [-3,0]
+end
+
+function refl_and_plot_rt(A,B,C)
+    A1 = transl(refl(A));
+    B1 = transl(refl(B));
+    C1 = transl(refl(C));
+
+    plot(layer(x=[A[1], B[1], C[1]],
+               y=[A[2], B[2], C[2]],
+               Geom.polygon(preserve_order=true, fill=true)),
+         layer(x=[A1[1], B1[1], C1[1]],
+               y=[A1[2], B1[2], C1[2]],
+               Geom.polygon(preserve_order=true, fill=true),
+               Theme(default_color=colorant"green")))
+end
+```
+
+
+
+
+    refl_and_plot_rt (generic function with 1 method)
 
 
 
