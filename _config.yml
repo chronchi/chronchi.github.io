@@ -30,3 +30,6 @@ disqus_shortname: chronchi
 
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
+
+gems:
+  - jekyll-seo-tag
