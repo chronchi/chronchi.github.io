@@ -5,7 +5,6 @@ categories:
   - julia
   - machine learning
 description: Implementação dos métodos do gradiente e gradiente estocástico.
-permalink: /blog/:title.html
 ---
 
 
