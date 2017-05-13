@@ -34,3 +34,5 @@ gems:
 
 google_analytics:
   UA-99022056-1
+
+permalink: /blog/:title.html
