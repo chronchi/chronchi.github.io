@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  Método do gradiente e gradiente estocástico
-category: Julia, Machine Learning
+categories:
+  - julia
+  - machine learning
 description: Implementação dos métodos do gradiente e gradiente estocástico.
 ---
 

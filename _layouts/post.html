@@ -22,7 +22,7 @@ layout: default
         {% when '11' %}Novembro
         {% when '12' %}Dezembro
       {% endcase %}
-      {{ page.date | date: "%Y" }}</time>{% if page.author %} •
+      {{ page.date | date: "de %Y" }}</time>{% if page.author %} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
