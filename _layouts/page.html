@@ -6,6 +6,9 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
+  {% if page.use_math %}
+    {% include mathjax_support %}
+  {% endif %}
 
   <div class="article-content">
     {{ content }}

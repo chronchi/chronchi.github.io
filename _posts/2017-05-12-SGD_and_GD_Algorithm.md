@@ -5,12 +5,25 @@ categories:
   - julia
   - machine learning
 description: Implementação dos métodos do gradiente e gradiente estocástico.
+mathjax: true
 ---
 
 
-Cost functions and prediction functions
-======
+No aprendizado de máquinas é comum usar duas funções para a regressão linear
+e a classificação, que tem como objetivo medir o erro entre o valor real
+e o valor previsto. Sendo $\{(x^{(1)},y^{(1)},\dots,(x^{(1)},y^{(1)})\}$
+um conjunto de dados para o treinamento, as funções para o erro da regressão
+e da classificação são respectivamente
 
+\\[
+  E(\theta) = \sum_{i=1}^{m} (y^{(i)} - \theta^T x^{(i)})^2,
+\\]
+
+e
+
+\\[
+  E(\theta) = \sum_{i=1}^{m}\Big(-y^{(i)}\log(m_{\theta}(x^{(i)})) - (1-y^{(i)})\log(1-m_{\theta}(x^{(i)}))\Big)
+\\]
 
 ```julia
 #LMS cost function
@@ -36,22 +49,12 @@ function cost_function_classification(w,x,y)
     n = length(w)
     a = zeros(m,1)
     for i = 1:m
-        a[i] = y[i]*log(predict(w,x[i,:])) + (1-y[i])*log(1-predict(w,x[i,:]))
+        a[i] = -y[i]*log(predict(w,x[i,:])) - (1-y[i])*log(1-predict(w,x[i,:]))
     end
     a = sum(a)
     return a
 end
 ```
-
-
-
-
-
-
-    cost_function_classification (generic function with 1 method)
-
-
-
 
 ```julia
 function sigmoid(x::Float64)
@@ -61,14 +64,6 @@ function sigmoid(x::Float64)
 end
 ```
 
-
-
-
-    sigmoid (generic function with 1 method)
-
-
-
-
 ```julia
 function identityy(x::Float64)
     # identity function
@@ -76,24 +71,9 @@ function identityy(x::Float64)
 end
 ```
 
-
-
-
-    identityy (generic function with 1 method)
-
-
-
-
 ```julia
 predict(w,x) = sigmoid(dot(w,x))
 ```
-
-
-
-
-    predict (generic function with 1 method)
-
-
 
 
 ```julia
@@ -108,13 +88,6 @@ function cost_function_classification(w,x,y)
     return a
 end
 ```
-
-
-
-
-    cost_function_classification (generic function with 1 method)
-
-
 
 Gradient descent/Ridge Regression
 ===
@@ -185,12 +158,6 @@ end
 
 
 
-
-    gradclass (generic function with 1 method)
-
-
-
-
 ```julia
 function trainerclass(w,x,y;cost = cost_function_classification ,grad = gradclass,
   max_iter = 10000, tol = 1e-4, α = 1)
@@ -218,13 +185,6 @@ function trainerclass(w,x,y;cost = cost_function_classification ,grad = gradclas
   return w, iter, elapsed_time
 end
 ```
-
-
-
-
-    trainerclass (generic function with 1 method)
-
-
 
 Stochastic Gradient Descent/Ridge Regression
 =======
@@ -278,11 +238,6 @@ function sgdm(w_init,x,y; max_iter = 10000, tol =
     return w, iter, elapsed_time
 end
 ```
-
-
-
-
-    sgdm (generic function with 1 method)
 
 
 
