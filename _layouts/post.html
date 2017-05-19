@@ -3,10 +3,10 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="artilce_header">
+  <header class="article_header">
     {% include mathjax.html %}
-    <h1 class="artilce_title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="artilce_meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <h1 class="article_title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="article_meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {% assign m = page.date | date: "%-m" %}
       {{ page.date | date: "%-d" }}
       {% case m %}
