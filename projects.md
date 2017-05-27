@@ -4,5 +4,9 @@ title: Projetos
 permalink: /projects/
 ---
 
-Uma breve descrição de cada projeto e um link que direciona para
-uma outra página explicando cada uma mais detalhadamente.
+# EM CONSTRUÇÃO
+
+## Rodoviária de Curitiba - Horários dos Guichês
+
+Para acessar a tabela de horários dos guiches da rodoviaria de
+Curitiba, acesse <a href="{{ site.baseurl }}/projects/TabelaGuicheRodoviaria.html">aqui</a>
