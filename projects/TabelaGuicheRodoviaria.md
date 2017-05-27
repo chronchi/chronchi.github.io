@@ -20,8 +20,8 @@ locadas na rodoviária de Curitiba.
 | Itapemirim          | 24h de Domingo a Sábado                                                                      |                                             |
 | Kaissara            | 24h de Domingo a Sábado                                                                      |                                             |
 | Catarinense         | 24h de Domingo a Sábado                                                                      |                                             |
-| Cometa              | 24h de Domingo a Sábado                                                                      | Após a meia noite  no guichê da catarinense |
+| Cometa              | 24h de Domingo a Sábado                                                                      | Após a meia noite  no guichê da Catarinense |
 | Eucator             | 24h de Domingo a Sábado                                                                      |                                             |
 | Pluma               | 24h de Domingo a Sábado                                                                      |                                             |
-| Viação ouro e prata | 24h de Domingo a Sábado                                                                      | Ver guichê Planalto                         |
+| Viação ouro e prata | 24h de Domingo a Sábado                                                                      | Atendimento no guichê Planalto                         |
 | Planalto            | 24h de Domingo a Sábado                                                                      |                                             |
