@@ -3,7 +3,7 @@
     <div class="footer left column one-half">
       <section class="small-font">
         Theme <a href="https://github.com/wild-flame/jekyll-simple"> Simple </a> by <a href="http://wildflame.me">wildflame</a>
-        © 2016 
+        © 2016
         Powered by <a href="https://github.com/jekyll/jekyll">jekyll</a>
       </section>
     </div>
@@ -20,3 +20,17 @@
     </div>
   </div>
 </footer>
+
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+{% if site.google_analytics %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','{{ site.baseurl }}/assets/js/analytics.js','ga');
+
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{% endif %}
