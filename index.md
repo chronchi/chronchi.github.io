@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-Meu nome é Carlos Ronchi, estudante de Mestrado em Matemática na Universidade
+Meu nome é Carlos Ronchi, mestrando em Matemática na Universidade
 de São Paulo - USP. Atualmente trabalho com aprendizado de máquinas, mais especificamente
 com computaçao visual e análise topológica de dados
 
