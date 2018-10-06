@@ -8,7 +8,7 @@
 # Site settings
 title: Carlos Ronchi
 email: carloshvronchi@gmail.com
-description: Site para falar sobre tópicos de matemática e computação.
+description: Personal webpage.
 baseurl: #"/jekyll-simple" # the subpath of your site, e.g. /blog
 url: "chronchi.github.io" # the base hostname & protocol for your site
 twitter:
