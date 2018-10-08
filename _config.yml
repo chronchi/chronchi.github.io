@@ -11,8 +11,7 @@ email: carloshvronchi@gmail.com
 description: Personal webpage.
 baseurl: #"/jekyll-simple" # the subpath of your site, e.g. /blog
 url: "chronchi.github.io" # the base hostname & protocol for your site
-twitter:
-  username: chronchi
+twitter_username: chronchi
 github_username:  chronchi
 
 # Build settings

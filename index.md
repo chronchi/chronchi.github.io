@@ -1,13 +1,18 @@
 ---
 layout: page
-title: Home
+title:
 ---
 
-Meu nome é Carlos Ronchi, mestrando em Matemática na Universidade
-de São Paulo - USP. Atualmente trabalho com aprendizado de máquinas, mais especificamente
-com computaçao visual e análise topológica de dados.
+I am currently a Master student in the [Mathematics Department](https://icmc.usp.br/en/admission/graduate/mathematics)
+at [Universidade de São Paulo](http://www5.usp.br/english/?lang=en)
+in São Carlos, studying under the supervision of [Dr. Marcio Gameiro](http://www.icmc.usp.br/pessoas/gameiro/).
 
-Para mais informações sobre mim, acesse <a href="{{ site.baseurl }}/about/">Sobre</a>.
+My research interests are in topological data analysis, machine learning, ways
+to combine both areas as well as real world applications.
 
-E para mais informações sobre os projetos que trabalho, acesse <a href="{{ site.baseurl }}/projects/">
-Projetos</a>.
+
+Email: carloshvronchi@gmail.com
+
+[Curriculum Lattes](http://lattes.cnpq.br/7243878025626015)
+
+[Curriculum Vitae](/assets/resume_CarlosRonchi.pdf)
