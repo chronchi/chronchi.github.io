@@ -7,7 +7,7 @@ I am currently a Master student in the [Mathematics Department](https://icmc.usp
 at [Universidade de São Paulo](http://www5.usp.br/english/?lang=en)
 in São Carlos, studying under the supervision of [Dr. Marcio Gameiro](http://www.icmc.usp.br/pessoas/gameiro/).
 
-My research interests are in topological data analysis, machine learning, ways
+My research interests are in topological data analysis, machine learning and ways
 to combine both areas as well as real world applications.
 
 
