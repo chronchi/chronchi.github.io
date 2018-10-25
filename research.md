@@ -10,8 +10,10 @@ permalink: /research/
 ---
 **Talks**
 
+Homologia persistente, machine learning e o estudo de proteínas [(pdf)](/assets/22_10_18.pdf) - 22/10/2018
+
 Homologia persistente e o algoritmo de redução [(ipynb)](/assets/ph_reduction/Reduction_Algorithm.ipynb),
-[(md)](/assets/ph_reduction/Reduction_Algorithm.md)
+[(md)](/assets/ph_reduction/Reduction_Algorithm.md) - 08/10/2018
 
 ---
 
