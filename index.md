@@ -15,4 +15,4 @@ Email: carloshvronchi@gmail.com
 
 [Curriculum Lattes](http://lattes.cnpq.br/7243878025626015)
 
-[Curriculum Vitae](/assets/resume_CarlosRonchi.pdf)
+[Curriculum Vitae](https://github.com/chronchi/cvCarlos/blob/master/output_cv/cv.pdf)
