@@ -1,5 +1,1 @@
-# jekyll-simple
-
-## simple
-simple is a theme designed for blogger using static site generator like jekyll, Hexo etc.
-
+[chronchi.github.io](chronchi.github.io)
