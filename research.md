@@ -4,11 +4,10 @@ title: Research
 permalink: /research/
 ---
 
-
-
-
 ---
 **Talks**
+
+Persistent homology applied to the protein stability [(pdf)](/assets/Persistenthomologyappliedtotheproteinstability.pdf) - 22/01/2020
 
 Homologia persistente, machine learning e o estudo de proteínas [(pdf)](/assets/22_10_18.pdf) - 22/10/2018
 
