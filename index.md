@@ -3,11 +3,12 @@ layout: page
 title:
 ---
 
-I am currently an intern at [Brisken's lab](https://brisken-lab.epfl.ch) @EPFL working with RNA-seq and data analysis. I hold a master degree in Mathematics from [Universidade de São Paulo](http://www5.usp.br/english/?lang=en) under the supervision of [Dr. Marcio Gameiro](http://www.icmc.usp.br/pessoas/gameiro/). 
+I am currently a PhD student at [Brisken's lab](https://brisken-lab.epfl.ch) @EPFL working with Breast Cancer and birth controll pills using topological data analysis tools. 
+I hold a master degree in Mathematics from [Universidade de São Paulo](http://www5.usp.br/english/?lang=en) under the supervision of [Dr. Marcio Gameiro](http://www.icmc.usp.br/pessoas/gameiro/). My bachelor is in Mathematics from Federal University of Paraná (UFPR). 
 
 My research interests are in computational biology, topological data analysis, machine learning.
 
-Email: carloshvronchi@gmail.com
+Email: carlos.ronchi@epfl.ch
 
 [Curriculum Vitae](https://github.com/chronchi/cvCarlos/blob/master/output_cv/cv.pdf)
 
