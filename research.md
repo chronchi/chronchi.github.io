@@ -18,7 +18,7 @@ Homologia persistente e o algoritmo de redução [(ipynb)](/assets/ph_reduction/
 
 **Poster Presentations**
 
-* A topological approach to protein stability 
+* A topological approach to protein stability [(Poster)](/assets/posterERT2019.pdf)
     * [XII Regional Topology Meeting](http://www.dm.ufscar.br/profs/ert2019), Oct 2019
 
 * Persistent Homology and the Protein Folding Problem

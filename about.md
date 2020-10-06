@@ -3,11 +3,11 @@ layout: page
 title: About
 ---
 
-I am currently an intern at [Brisken's lab](https://brisken-lab.epfl.ch) @EPFL working with RNA-seq and data analysis.
-I hold a master degree in Mathematics from [Universidade de São Paulo](http://www5.usp.br/english/?lang=en) under the
-supervision of [Prof. Dr. Marcio Gameiro](http://www.icmc.usp.br/pessoas/gameiro/) with a 6 months resarch exchange programm
-at [Rutgers University](https://www.rutgers.edu/) under supervision of 
-[Prof. Dr. Konstantin Mischaikow](https://sites.math.rutgers.edu/~mischaik/)
+I am currently a PhD student at [Brisken's lab](https://brisken-lab.epfl.ch) @EPFL 
+working with Breast Cancer and birth controll pills using topological data analysis tools.
+I hold a master degree in Mathematics from [Universidade de São Paulo](http://www5.usp.br/english/?lang=en) under the supervision of [Dr. Marcio Gameiro](http://www.icmc.usp.br/pessoas/gameiro/) with a 6 
+months research exchange programm at [Rutgers University](https://www.rutgers.edu/) under 
+supervision of  [Prof. Dr. Konstantin Mischaikow](https://sites.math.rutgers.edu/~mischaik/)
 
 My research interests are in computational biology, topological data analysis, machine learning.
 
