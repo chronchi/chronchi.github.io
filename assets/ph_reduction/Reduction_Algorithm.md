@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Algoritmo de redução para o cálculo da homologia persistente
+layout: post
 ---
 
 Função que encontra o pivô da coluna, em outras palavras, o lowest one.

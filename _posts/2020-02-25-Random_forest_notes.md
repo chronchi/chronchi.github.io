@@ -11,6 +11,8 @@ description: Description of the notes posted online explaining Random forest and
 [Here are some notes]({{ site.baseurl }}/assets/notes/random_forests.pdf) explaining the basics
 of Random Forest and Decision Trees with a simple example of Decision Trees in the end. 
 
+<!--more-->
+
 In this example the decision tree of a dataset with three samples with two features each.
 The importance for each feature was calculated as well.
 
