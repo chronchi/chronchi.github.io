@@ -10,7 +10,7 @@ order: 1
 
 * Persistent homology applied to the protein stability [(pdf)]({{ site.baseurl }}/assets/Persistenthomologyappliedtotheproteinstability.pdf) - 22/01/2020
 * Homologia persistente, machine learning e o estudo de proteínas [(pdf)]({{ site.baseurl }}/assets/22_10_18.pdf) - 22/10/2018
-* Homologia persistente e o algoritmo de redução [(ipynb)]({{ site.baseurl }}/assets/ph_reduction/Reduction_Algorithm.ipynb), [(md)]({{ site.baseurl }}/assets/ph_reduction/Reduction_Algorithm) - 08/10/2018
+* Homologia persistente e o algoritmo de redução [(ipynb)]({{ site.baseurl }}/assets/ph_reduction/Reduction_Algorithm.ipynb), [(md)]({{ site.baseurl }}/assets/ph_reduction/Reduction_Algorithm.md) - 08/10/2018
 
 
 ## Poster Presentations 

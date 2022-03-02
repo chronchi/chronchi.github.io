@@ -1,7 +1,3 @@
----
-layout: post
----
-
 Função que encontra o pivô da coluna, em outras palavras, o lowest one.
 
 
