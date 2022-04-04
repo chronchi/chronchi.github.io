@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dichotomization and statistical testing: part 1"
+slug: "dichotomization-part1"
 categories:
     - statistics
     - null hypothesis

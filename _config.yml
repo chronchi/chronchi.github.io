@@ -6,9 +6,9 @@ description: My homepage describing my work and other stuff
 name: tufte
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-permalink: /articles/:short_year/:title
-timezone: America/New_York
+timezone: Europe/Zurich
 email: carloshvronchi@gmail.com
+permalink: /blog/:year/:month/:day/:slug:output_ext
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'UploadToGithub.Rakefile', 'README.md']
 post:
