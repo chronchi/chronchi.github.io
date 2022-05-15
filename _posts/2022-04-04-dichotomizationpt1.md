@@ -12,27 +12,30 @@ description: First part of blog posts that describe the effects of dichotomizati
 # Intro
 
 Dichotomization is something widespread in biological sciences. Given a 
-continuous variable, a dichotomization process is performed in order to 
+continuous variable, the dichotomization process is performed in order to 
 make its interpreation easier. Usually this is done in the context of survival
-analysis, an example is gene expression levels that are divided into low
-and high values or different quantiles. 
+analysis. An example is gene expression levels that are divided into low
+and high values or different quantiles. The thresholds used are highly
+data dependent and thus might be unstable.
 
 This process might be problematic, as we might be inducing effects 
-that are non existent when thresholding and dichotomizing continuous variables.
-In this blog post I show how associations can arise from randomly 
-generated data, just by expectation. 
+that are non existent when setting the threshold and dichotomizing 
+continuous variables. In this blog post I show how associations can 
+arise from randomly generated data, and discuss how this is 
+related to p-hacking. 
 
 # Generating the data
 
 The first step is to generate the random data. A random outcome 
 vector is first generated and will serve as the base to the associations.
-Then, through n iterations, a random vector of covariates is created.
-By the definition of p-values, we expect some of these covariates
-to be associated with our outcome. The covariates are then dichotomized 
+Then, through n iterations, a random covariate vector is created.
+By procedure of the null hypothesis statistical test (NHST), 
+in some iterations, we expect to mistakenly 
+find an association between the covariate and the outcome 
+variables. The covariates are then dichotomized 
 using the median as a threshold. 
 
 # Loading necessary packages
-
 
 ```r
 library(dplyr)
@@ -51,10 +54,10 @@ library(survival)
 
 ## Simulation
 
-A total of 5000 simulations are run for a total 
-of 100 samples. First the random outcome is generated
+In total 5000 simulations are run, each with a 
+sample size of 100. First the random outcome is generated
 and then random normaly distributed covariates are obtained
-by sampling the mean and standard deviation from an uniform distribution.
+by sampling the mean and standard deviation from a uniform distribution.
 
 
 ```r
@@ -89,7 +92,7 @@ results_association_vals <- lapply(
 ## Checking and plotting the results
 
 Due to the nature of p-values, one can expect to see 5% of the p-values
-to be smaller than 0.5. 
+to be smaller than 0.05. 
 
 
 ```r
@@ -109,10 +112,9 @@ results_association_vals %>% ggplot2::ggplot(aes(x = p.value)) +
 
 <img src="{{ site.baseurl }}/assets/vanilla_dichotomization_files/figure-html/unnamed-chunk-3-1.png"  />
 
-The histogram above looks like an uniform distribution. There are several
-statistically significant results, and the probability of them to be
-smaller than 0.05 is:
-    
+The histogram above looks like a uniform distribution. 
+With the usual 0.05 significance level, the proportion of 
+iterations in which the null hypothesis was rejected is:    
 
 ```r
 mean(results_association_vals$p.value < 0.05) * 100
@@ -122,13 +124,13 @@ mean(results_association_vals$p.value < 0.05) * 100
 ## [1] 4.86
 ```
 
-as expected from a the uniform distribution of p-values.
+as expected from the uniform distribution of p-values.
 
 ## Dichotomizing the continuous variables
 
-In this step the continuous covariates are dichotomized and means
+In this step the continuous covariate is dichotomized and means
 of the two groups are compared. 
-Again we expect an uniform distribution of the p-values. The trick used
+Again we expect a uniform distribution of the p-values. The trick used
 here is the fact the slope of the linear regression corresponds to the 
 difference of means.
 
@@ -170,9 +172,9 @@ results_dichotomy %>% ggplot2::ggplot(aes(x = p.value)) +
 
 <img src="{{ site.baseurl }}/assets/vanilla_dichotomization_files/figure-html/unnamed-chunk-6-1.png"  />
 
-It looks as expected. The plot below shows the relation
-between the p-values of the continuous covariate and their dichotmized versions.
-
+It looks as expected. The plot below shows the relation between the 
+p-values of the continuous covariate and the 
+p-values of their dichotomized version 
 
 ```r
 final_pvalues <- data.frame(
@@ -191,12 +193,12 @@ final_pvalues %>% ggplot2::ggplot(aes(x = continuous, y = dichotomy)) +
 
 <img src="{{ site.baseurl }}/assets/vanilla_dichotomization_files/figure-html/unnamed-chunk-7-1.png"  />
 
-The p-values are not all similar, showing how unstable this process can be.
+In principle, there is not relationship between the 
+p-values of the continuous and dichotomized covariate.
 
 Let us focus now on the dichotomized covariates that 
 are actually statistically significant and analyse the 
 p-values from the continuous covariates.
-
 
 ```r
 final_pvalues %>% 
@@ -216,11 +218,30 @@ This plot shows that several dichotomized covariates showed an association
 to the outcome, despite the fact that the continuous covariate showed
 p-values ranging from 0 to 1. 
 
+The process done previously can be extended to multiple thresholds, 
+such as those based on different quantiles. Given that multiple
+tests are done, the chances of getting a p-value smaller than
+0.05 increases, leading to a spurious result. This process is
+a type of p-hacking.
+
 # Conclusion
 
-By dichotomizing one can create an effect that is not actually there. This 
-process can also be gamed by changing how one thresholds the data. 
-Dichotomization should be avoided whenever possible. 
+Dichotomization is a process that can be manipulated. 
+By doing this process, one increases the
+chances of finding an effect that is not there, leading
+to p-hacking. Not only this, the power is heavily decreased,
+since a lot of the data is discarded when setting thresholds
+based on quantiles.
+
+If dichotomization is really necessary, care should be taken and
+the threshold should be well justified with data, simulations and
+expert knowledge. 
 
 In the next blog post I show a simulation example using survival data. 
 Stay tuned!
+
+# Acknowledgments
+
+A big thank you to Thiago for his comments and suggestions. Thank you
+also to Emir and Markus for their opinions and comments on
+the draft. 
