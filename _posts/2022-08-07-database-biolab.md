@@ -114,7 +114,7 @@ an `experiments` table with the same columns as the
 RNA-seq database. Since the two data types are inherently
 different, they stay in different databases. One could put everything
 together and then append the name of the table with the type of
-experiment, but I think this way you insulate and organize the
+experiment, but I think this way you isolate and organize the
 database better.
 
 # The perks of having a database
