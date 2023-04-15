@@ -6,6 +6,15 @@ order: 1
 
 # Research
 
+## Software 
+
+* [biogrowleR](https://upbri.gitlab.io/biogrowleR/): Extracting insights 
+from growth measurement data; a R package. Link to the website with 
+further tutorials and instructions: 
+[upbri.gitlab.io/biogrowleR/](https://upbri.gitlab.io/biogrowleR/). For bugs
+and issues, create a new issue on gitlab: 
+[gitlab.com/upbri/biogrowleR](https://gitlab.com/upbri/biogrowleR)
+
 ## Talks 
 
 * Persistent homology applied to the protein stability [(pdf)]({{ site.baseurl }}/assets/Persistenthomologyappliedtotheproteinstability.pdf) - 22/01/2020
@@ -13,7 +22,10 @@ order: 1
 * Homologia persistente e o algoritmo de redução [(ipynb)]({{ site.baseurl }}/assets/ph_reduction/Reduction_Algorithm.ipynb), [(algo)]({{ site.baseurl }}/assets/ph_reduction/Reduction_Algorithm) - 08/10/2018
 
 
-## Poster Presentations 
+## Posters 
+
+* Estrogen signature and gene coexpression network for breast cancer stratification and survival analysis
+    * Basel Computational Biology Conference - BC2, Switzerland, Sep 2021
 
 * A topological approach to protein stability [(Poster)](/assets/posterERT2019.pdf)
     * [XII Regional Topology Meeting](http://www.dm.ufscar.br/profs/ert2019), Oct 2019
