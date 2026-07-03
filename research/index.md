@@ -6,7 +6,44 @@ order: 1
 
 # Research
 
+## Publications 
+
+* Renée L. Flaherty, Flavia Hughes, George Sflomos, **Carlos Ronchi**, et al.
+"LOX inhibition disrupts a collagen–integrin–MYC axis to suppress progression of
+invasive lobular carcinoma."
+*Cancer Research* 86(10), 2487–2507 (2026).
+[doi:10.1158/0008-5472.CAN-25-3490](https://doi.org/10.1158/0008-5472.CAN-25-3490)
+
+* **Carlos Ronchi**, Giovanna Ambrosini, Flavia Hughes, Renée L. Flaherty, Hazel
+M. Quinn, Daria Matvienko, Andrea Agnoletto, Cathrin Brisken.
+"biogrowleR: enhancing longitudinal data analysis."
+*Journal of Mammary Gland Biology and Neoplasia* 30, 9 (2025).
+[doi:10.1007/s10911-025-09583-7](https://doi.org/10.1007/s10911-025-09583-7)
+
+* Dorian V. Ziegler, Kanishka Parashar, Lucia Leal-Esteban, …, **Carlos Ronchi**,
+…, Lluis Fajas.
+"CDK4 inactivation inhibits apoptosis via mitochondria-ER contact remodeling in
+triple-negative breast cancer."
+*Nature Communications* 16, 541 (2025).
+[doi:10.1038/s41467-024-55605-z](https://doi.org/10.1038/s41467-024-55605-z)
+
+* **Carlos Ronchi**, Syed Haider, Cathrin Brisken.
+"EMBER creates a unified space for independent breast cancer transcriptomic
+datasets enabling precision oncology."
+*npj Breast Cancer* 10, 56 (2024).
+[doi:10.1038/s41523-024-00665-z](https://doi.org/10.1038/s41523-024-00665-z)
+
+* **Carlos Ronchi**, Cathrin Brisken.
+"Targeting the progesterone receptor in breast cancer: mind the short form!"
+*Clinical Cancer Research* 29(5), 833–834 (2023).
+[doi:10.1158/1078-0432.CCR-22-3374](https://doi.org/10.1158/1078-0432.CCR-22-3374)
+
 ## Software 
+
+* [EMBER](https://chronchi.github.io/ember/): a universal framework that embeds
+independent breast cancer transcriptomes into a single unified space, enabling
+molecular subtype and pathway scoring on a single-sample basis. Code:
+[github.com/chronchi/ember](https://github.com/chronchi/ember).
 
 * [biogrowleR](https://upbri.gitlab.io/biogrowleR/): Extracting insights 
 from growth measurement data; a R package. Link to the website with 

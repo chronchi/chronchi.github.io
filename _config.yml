@@ -6,7 +6,7 @@ description: My homepage describing my work and other stuff
 name: tufte
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-timezone: Europe/Zurich
+timezone: America/Chicago
 email: carloshvronchi@gmail.com
 permalink: /blog/:year/:month/:day/:slug:output_ext
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.

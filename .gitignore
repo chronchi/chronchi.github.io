@@ -1,6 +1,8 @@
 _site
 vendor
+.bundle
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
+*.bak
 
